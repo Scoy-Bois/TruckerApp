@@ -1,6 +1,6 @@
 # TruckerApp
 
-This repo serves as a collaborative repository for our Good Driver Program application. Our software stack is as follows:
+This Git serves as a collaborative repository for our Good Driver Program application. Our software stack is as follows:
 
 Front-End: 
 Code: React
