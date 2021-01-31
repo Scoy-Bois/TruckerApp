@@ -25,7 +25,7 @@ SECRET_KEY = '*uq59e8pztllw62#4c2tqk10b@qtj!8dz0liy(6$)xk*5f2ds+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [u'ec2-52-205-135-163.compute-1.amazonaws.com']
+ALLOWED_HOSTS = [u'ec2-52-205-135-163.compute-1.amazonaws.com', u'localhost', u'django']
 
 
 # Application definition
