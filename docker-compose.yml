@@ -10,7 +10,8 @@ services:
       -  8000
 
   nginx:
-    build: nginx
+    build: ./nginx
+    command: nginx -g "daemon off;"
     restart: always
     ports:
        -  443:443
