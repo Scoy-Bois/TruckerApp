@@ -11,20 +11,22 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('/prices')
-      .then(res => this.setState({ bitcoinValue: res.data }))
+    axios.get('/username')
+      .then(res => this.setState({username: res.data}))
       .catch(console.log);
+      axios.get('/password')
+      .then(res => this.setState({password: res.data}))
+      .catch(console.log);
+
   }
 
   render() {
-    const { bitcoinValue } = this.state;
-
     return (
       <div>
-        <h1>hello</h1>
+        <h1>{this.state.username}</h1>
+        <h1>{this.state.password}</h1>
       </div>
     );
   }
 }
-
 export default App;
