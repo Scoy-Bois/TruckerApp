@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import './app.css';
 
 class App extends React.Component {
   constructor(props) {
@@ -22,9 +23,20 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>{this.state.username}</h1>
-        <h1>{this.state.password}</h1>
+      <div className="App">
+         <header className="App-header">
+          Welcome! Please Log In!
+          <form>
+            <label>
+              <input type = "text" name = "username" />
+            </label>
+            {"\n"}
+            <label>
+              <input type = "text" name = "password" />
+            </label>
+            <input type = "submit" value = "submit" />
+          </form>
+        </header>
       </div>
     );
   }
