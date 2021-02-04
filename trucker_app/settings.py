@@ -75,8 +75,10 @@ WSGI_APPLICATION = 'trucker_app.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'djongo',
+        'NAME': 'my_database',
+        'HOST' : '10.0.0.26',
+        'PORT' : '27017',
     }
 }
 
