@@ -10,4 +10,7 @@ app.get('/username', (req, res) => {
 app.get('/password', (req, res) => {
     res.send('12345')
   })
+  app.get('/sponsorName', (req, res) => {
+    res.send('Sponsor_Name')
+  })
 app.listen(port, () => console.log(`listening on port ${port}!`));

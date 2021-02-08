@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import './app.css';
 import DriverHome from './DriverHome.jsx';
+import SponsorHome from './SponsorHome.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -74,7 +75,11 @@ class App extends React.Component {
     else{
       return(
         <div>
+<<<<<<< HEAD
           <DriverHome data = {this.state.loginPage}/> 
+=======
+          <SponsorHome/> 
+>>>>>>> d0be3fcbbf32d28257a6307231ed15e7b55bc8d4
         </div>
       )
     };
