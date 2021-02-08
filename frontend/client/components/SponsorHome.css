@@ -1,0 +1,19 @@
+.sponsorHome {
+    text-align: center;
+    background-color: green;
+  }
+
+.sponsorHeader{
+        background-color: #222;
+        height: 100vh;
+        color: white;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+}
+
+.sponsorButtons{
+    display:flex;
+    justify-content: space-evenly;
+}
