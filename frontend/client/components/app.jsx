@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import './app.css';
 import DriverHome from './DriverHome.jsx';
+import SponsorHome from './SponsorHome.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -71,7 +72,7 @@ class App extends React.Component {
     else{
       return(
         <div>
-          <DriverHome/> 
+          <SponsorHome/> 
         </div>
       )
     };
