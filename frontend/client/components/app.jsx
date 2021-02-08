@@ -26,7 +26,10 @@ class App extends React.Component {
   handleSubmit(event) {
     this.setState({loginPage: false})
     event.preventDefault();
-    
+  }
+  handleLoginChange(event){
+    this.setState({loginPage: value})
+    event.preventDefault ();
   }
 
   //this is going to check the values for any REST api requests
@@ -71,7 +74,7 @@ class App extends React.Component {
     else{
       return(
         <div>
-          <DriverHome/> 
+          <DriverHome data = {this.state.loginPage}/> 
         </div>
       )
     };

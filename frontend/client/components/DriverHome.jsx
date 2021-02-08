@@ -10,13 +10,16 @@ class DriverHome extends Component{
       }
       handleClick() {
         console.log('Click happened');
+        console.log(this.props.data)
+        this.setState({loginPage : true})
+        console.log(this.props.data)
       }
       render() {
         return(
           <div className = "DriverHome-header">
             <header>
               <h1>Welcome To the Driver Home Page!</h1>
-              <button onClick={this.handleClick}>Click Me</button>
+              <button onClick={this.handleClick}>Log Out</button>
             </header>
           </div>
             
