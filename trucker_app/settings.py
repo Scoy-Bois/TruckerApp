@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'trucker_site',
+    'trucker_api',
 ]
 
 MIDDLEWARE = [
