@@ -2,8 +2,8 @@ version: "3.9"
 
 services:
   web:
-    build: .
-    command: gunicorn trucker_app.wsgi:application --bind 0.0.0.0:8000
+    build: ./web
+    command: gunicorn web.trucker_app.wsgi:application --bind 0.0.0.0:8000
     volumes:
       - .:/code
     expose:
@@ -12,6 +12,8 @@ services:
   nginx:
     build: ./nginx
     command: nginx -g "daemon off;"
+    volumes:
+       - .:/code
     restart: always
     ports:
        -  443:443
